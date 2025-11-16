@@ -1,1 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Interpill</title>
+    <style>
+        :root {
+            --primary: #1c8b6a;
+            --primary-dark: #13614a;
+            --accent: #eaf8f3;
+            --bg: #f3f6fa;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle at top, #e4f3ff 0, #f3f6fa 40%, #f3f6fa 100%);
+            color: #333;
+        }
+
+        .wrapper {
+            max-width: 720px;
+            margin: 40px auto;
+            padding: 0 16px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 28px 22px 26px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+        }
+
+        .app-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 10px;
+        }
+
+        .app-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 18px;
+            display: block;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin: 0 0 4px;
+            color: #1f2933;
+        }
+
+        .subtitle {
+            margin: 0;
+            font-size: 14px;
+            color: #6b7785;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 6px;
+            color: #243441;
+        }
+
+        p {
+            font-size: 15px;
+            margin: 4px 0 10px;
+        }
+
+        ul {
+            margin: 4px 0 10px 20px;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 15px;
+            margin-bottom: 4px;
+        }
+
+        .note {
+            font-size: 13px;
+            color: #6b7785;
+            margin-top: 10px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 16px;
+            font-size: 14px;
+            color: var(--primary-dark);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 22px 16px 20px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="card">
+        <div class="app-header">
+            <img class="app-icon" src="interpill-logo.png" alt="Interpill logo">
+            <div>
+                <h1>About Interpill</h1>
+                <p class="subtitle">
+                    Background information for testers and supervisors.
+                </p>
+            </div>
+        </div>
+
+        <h2>Purpose of the app</h2>
+        <p>
+            Interpill is a Kotlin Multiplatform mobile application designed to support
+            <strong>personalised drug–drug interaction checks</strong>. The aim is to give
+            users a clearer view of how their medicines may interact, taking into account
+            their individual health profile.
+        </p>
+
+        <h2>Key functionality</h2>
+        <p>The current evaluation build of Interpill allows users to:</p>
+        <ul>
+            <li>search for medicines and review structured interaction information,</li>
+            <li>scan medication packaging to look up selected medicines,</li>
+            <li>view key sections of official drug information (labels),</li>
+            <li>keep a simple medication schedule and run quick interaction checks
+                for all added medicines.</li>
+        </ul>
+
+        <h2>Personalisation</h2>
+        <p>
+            Interaction analysis is personalised using the user’s recorded allergies and
+            medical conditions. These details are used to highlight interactions or warnings
+            that may be more relevant for that specific user.
+        </p>
+
+        <h2>Data sources and AI support</h2>
+        <p>
+            Interpill combines information from recognised medicine data sources
+            (such as RxNorm, OpenFDA and DailyMed) with an additional AI-generated
+            summary. The AI component is used to provide a short, readable overview
+            of potential interactions, while the underlying interaction logic is
+            based on structured data and rules.
+        </p>
+        <p class="note">
+            The AI summary is intended to complement, not replace, the underlying data.
+            It is deliberately conservative and designed to be easy to understand.
+        </p>
+
+        <h2>Project context</h2>
+        <p>
+            Interpill has been developed as part of my final-year
+            <strong>BSc Computer Science</strong> project at the
+            <strong>University of West London</strong>. The current build is an
+            evaluation version intended for research and usability testing.
+        </p>
+
+        <h2>Important notes for testers</h2>
+        <p>
+            Interpill is <strong>not</strong> a substitute for professional medical advice,
+            diagnosis or treatment. It is a research prototype and must not be used to
+            make real clinical decisions. Any concerns about medicines or interactions
+            should always be discussed with a qualified healthcare professional.
+        </p>
+
+        <a class="back-link" href="index.html">← Back to download page</a>
+    </div>
+</div>
+
+</body>
+</html>
 
