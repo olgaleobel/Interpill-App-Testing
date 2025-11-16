@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interpill – Download for Testing</title>
+    <title>Interpill – Download</title>
     <style>
         :root {
             --primary: #1c8b6a;
@@ -41,11 +41,10 @@
         }
 
         .app-icon {
-            width: 64px;
-            height: 64px;
-            border-radius: 18px;
+            width: 72px;
+            height: 72px;
+            border-radius: 16px;
             display: block;
-            object-fit: cover;
         }
 
         h1 {
@@ -61,13 +60,13 @@
         }
 
         .section {
-            margin-top: 18px;
+            margin-top: 22px;
         }
 
         .section-title {
             font-weight: bold;
-            font-size: 15px;
-            margin-bottom: 4px;
+            font-size: 16px;
+            margin-bottom: 6px;
             color: #243441;
         }
 
@@ -92,7 +91,7 @@
             color: #1f2933;
         }
 
-        /* кнопка по центру */
+        /* Кнопка загрузки */
         .download-btn {
             display: inline-block;
             background-color: var(--primary);
@@ -116,31 +115,32 @@
         .small-note {
             font-size: 13px;
             color: #6b7785;
+            text-align: center;
         }
 
-        .feedback-link {
-            font-size: 15px;
-            font-weight: bold;
+        /* Ссылка на Appetize */
+        .browser-test-block {
+            margin-top: 26px;
+            padding: 14px 18px;
+            background: #f2fcf7;
+            border-left: 4px solid var(--primary);
+            border-radius: 8px;
+        }
+
+        .browser-test-block a {
             color: var(--primary-dark);
+            font-weight: bold;
+            text-decoration: none;
         }
 
-        .feedback-link:hover {
+        .browser-test-block a:hover {
             text-decoration: underline;
         }
 
         .footer-note {
-            margin-top: 14px;
+            margin-top: 20px;
             font-size: 12px;
             color: #8a94a3;
-        }
-
-        @media (max-width: 480px) {
-            .card {
-                padding: 22px 16px 20px;
-            }
-            h1 {
-                font-size: 20px;
-            }
         }
     </style>
 </head>
@@ -151,52 +151,51 @@
         <div class="app-header">
             <img class="app-icon" src="interpill-logo.png" alt="Interpill logo">
             <div>
-                <h1>Interpill – Download for Testing</h1>
-                <p class="subtitle">
-                    Please use this page to install the app and submit your feedback.
-                </p>
+                <h1>Interpill – App for Testing</h1>
+                <p class="subtitle">Please use this page to download the app and submit your feedback.</p>
             </div>
         </div>
 
-        <!-- очень короткое описание цели + ссылка Подробнее -->
+        <!-- About Interpill -->
         <div class="section">
             <div class="section-title">About Interpill</div>
             <p>
-                Interpill provides personalised drug–drug interaction analysis based on your recorded
-                allergies and medical conditions.
-            </p>
-            <p>
-                <a class="feedback-link" href="about.html">
-                    Learn more →
-                </a>
+                Interpill provides personalised drug–drug interaction checks.
+                <br>Tap below to download or test the app.
             </p>
         </div>
 
+        <!-- Step 1 – Download -->
         <div class="section download-section">
-            <div class="section-title">Step&nbsp;1 – Install the app</div>
-            <p>
-                Tap the button below to download the Interpill installation file to your Android device.
-            </p>
+            <div class="section-title">Step&nbsp;1 – Download the app</div>
+            <p>Tap the button below to download the Interpill APK to your Android device.</p>
 
             <a class="download-btn"
                href="https://github.com/olgaleobel/Interpill-App-Testing/releases/download/v1.0-testing/composeApp-beta-34.apk">
-                Install Interpill
+                Download Interpill APK
             </a>
-            <p class="small-note">
-                This will download the Interpill installation file (APK). It may appear in your
-                <em>Downloads</em> folder once the download has finished.
-            </p>
+
+            <p class="small-note">The file will appear in your <em>Downloads</em> folder.</p>
         </div>
 
+        <!-- Alternative – Browser Testing -->
+        <div class="browser-test-block">
+            <strong>No Android phone?</strong><br>
+            You can test Interpill directly in your browser:<br>
+            👉 <a href="https://appetize.io/app/b_dssjraxcika2uoobbf3x23mshq" target="_blank">
+                Launch Interpill Online (Appetize)
+            </a>
+        </div>
+
+        <!-- Step 2 – Install -->
         <div class="section">
-            <div class="section-title">Step&nbsp;2 – Open the app</div>
+            <div class="section-title">Step&nbsp;2 – Install the app</div>
             <div class="steps">
                 <div class="step">
                     <strong>1.</strong> Open the downloaded file on your phone.
                 </div>
                 <div class="step">
-                    <strong>2.</strong> If a security message appears, choose
-                    <em>Allow installation</em> or <em>Install anyway</em>.
+                    <strong>2.</strong> If a security message appears, choose <em>Allow installation</em>.
                 </div>
                 <div class="step">
                     <strong>3.</strong> Once installed, find <strong>Interpill</strong> in your apps and open it.
@@ -204,30 +203,15 @@
             </div>
         </div>
 
+        <!-- Step 3 – Feedback -->
         <div class="section">
             <div class="section-title">Step&nbsp;3 – Share your feedback</div>
-            <p>
-                After testing the app, please complete the short feedback form:
-            </p>
+            <p>Please complete the short feedback form after testing the app:</p>
             <p>
                 <a class="feedback-link"
                    href="https://docs.google.com/forms/d/1xoBHd9szkrjVSsM5ZfyjFl3ZG8xgNvtlbQddYoi8DSk/preview"
                    target="_blank">
                     Open Feedback Form
-                </a>
-            </p>
-        </div>
-
-        <div class="section">
-            <div class="section-title">No Android phone?</div>
-            <p>
-                If you do not have an Android device but are happy to test Interpill
-                using a virtual Android emulator on your computer, please click the link below
-                for step-by-step instructions.
-            </p>
-            <p>
-                <a class="feedback-link" href="emulator-instructions.html">
-                    Click here to test Interpill using an emulator
                 </a>
             </p>
         </div>
