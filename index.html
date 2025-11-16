@@ -45,13 +45,7 @@
             height: 52px;
             border-radius: 16px;
             background: var(--accent);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 20px;
-            color: var(--primary-dark);
-            border: 1px solid #d5e9e1;
+            display: block;
         }
 
         h1 {
@@ -98,18 +92,21 @@
             color: #1f2933;
         }
 
+        /* Красивая кнопка по центру */
         .download-btn {
-            display: block;
-            width: 100%;
-            text-align: center;
+            display: inline-block;
             background-color: var(--primary);
             color: white;
-            padding: 14px;
-            margin: 14px 0 4px;
+            padding: 14px 32px;
+            margin: 14px auto 4px;
             border-radius: 10px;
             text-decoration: none;
             font-size: 16px;
             font-weight: bold;
+        }
+
+        .section.download-section {
+            text-align: center;
         }
 
         .download-btn:hover {
@@ -161,7 +158,7 @@
             </div>
         </div>
 
-        <div class="section">
+        <div class="section download-section">
             <div class="section-title">Step&nbsp;1 – Download the app</div>
             <p>Tap the button below to download the Interpill APK to your Android device.</p>
 
