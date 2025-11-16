@@ -5,85 +5,210 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interpill – APK Download</title>
     <style>
+        :root {
+            --primary: #1c8b6a;
+            --primary-dark: #13614a;
+            --accent: #eaf8f3;
+            --bg: #f3f6fa;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            max-width: 650px;
-            margin: 40px auto;
-            padding: 0 20px;
-            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle at top, #e4f3ff 0, #f3f6fa 40%, #f3f6fa 100%);
             color: #333;
         }
+
+        .wrapper {
+            max-width: 720px;
+            margin: 40px auto;
+            padding: 0 16px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 28px 22px 26px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+        }
+
+        .app-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 8px;
+        }
+
+        .app-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 16px;
+            background: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 20px;
+            color: var(--primary-dark);
+            border: 1px solid #d5e9e1;
+        }
+
         h1 {
-            text-align: center;
-            font-size: 28px;
-            margin-bottom: 10px;
+            font-size: 22px;
+            margin: 0 0 2px;
+            color: #1f2933;
         }
+
+        .subtitle {
+            margin: 0;
+            font-size: 14px;
+            color: #6b7785;
+        }
+
+        .section {
+            margin-top: 18px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 4px;
+            color: #243441;
+        }
+
         p {
-            font-size: 17px;
+            font-size: 15px;
+            margin: 4px 0 10px;
         }
+
+        .steps {
+            background: #f7fafc;
+            border-radius: 12px;
+            padding: 10px 12px;
+            margin-top: 6px;
+        }
+
+        .step {
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        .step strong {
+            color: #1f2933;
+        }
+
         .download-btn {
             display: block;
+            width: 100%;
             text-align: center;
-            background-color: #2b8aed;
+            background-color: var(--primary);
             color: white;
             padding: 14px;
-            margin: 25px 0;
-            border-radius: 8px;
+            margin: 14px 0 4px;
+            border-radius: 10px;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: bold;
         }
+
         .download-btn:hover {
-            background-color: #2168c2;
+            background-color: var(--primary-dark);
         }
-        .section-title {
-            margin-top: 30px;
-            font-weight: bold;
-            font-size: 18px;
+
+        .small-note {
+            font-size: 13px;
+            color: #6b7785;
         }
+
         .feedback-link {
-            font-size: 17px;
+            font-size: 15px;
             font-weight: bold;
+            color: var(--primary-dark);
+        }
+
+        .feedback-link:hover {
+            text-decoration: underline;
+        }
+
+        .footer-note {
+            margin-top: 14px;
+            font-size: 12px;
+            color: #8a94a3;
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 22px 16px 20px;
+            }
+            h1 {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
 <body>
 
-<h1>Interpill — APK for Testing</h1>
+<div class="wrapper">
+    <div class="card">
+        <div class="app-header">
+            <div class="app-icon">IP</div>
+            <div>
+                <h1>Interpill – APK for Testing</h1>
+                <p class="subtitle">
+                    Please use this page to download the app and submit your feedback.
+                </p>
+            </div>
+        </div>
 
-<p>
-    Thank you for helping test the Interpill mobile application.
-    Please follow the steps below to install the app and submit feedback.
-</p>
+        <div class="section">
+            <div class="section-title">Step&nbsp;1 – Download the app</div>
+            <p>Tap the button below to download the Interpill APK to your Android device.</p>
 
-<div class="section-title">Step 1: Download the App</div>
+            <a class="download-btn"
+               href="https://github.com/olgaleobel/Interpill-App-Testing/releases/download/v1.0-testing/composeApp-beta-34.apk">
+                Download Interpill APK
+            </a>
+            <p class="small-note">
+                The file may appear in your <em>Downloads</em> folder once the download has finished.
+            </p>
+        </div>
 
-<a class="download-btn"
-   href="https://github.com/olgaleobel/Interpill-App-Testing/releases/download/v1.0-testing/composeApp-beta-34.apk">
-    Download Interpill APK
-</a>
+        <div class="section">
+            <div class="section-title">Step&nbsp;2 – Install the app</div>
+            <div class="steps">
+                <div class="step">
+                    <strong>1.</strong> Open the downloaded file on your phone.
+                </div>
+                <div class="step">
+                    <strong>2.</strong> If a security message appears, choose
+                    <em>Allow installation</em> or <em>Install anyway</em>.
+                </div>
+                <div class="step">
+                    <strong>3.</strong> Once installed, find <strong>Interpill</strong> in your apps and open it.
+                </div>
+            </div>
+        </div>
 
-<div class="section-title">Step 2: Install the App</div>
+        <div class="section">
+            <div class="section-title">Step&nbsp;3 – Share your feedback</div>
+            <p>
+                After testing the app, please complete the short feedback form:
+            </p>
+            <p>
+                <a class="feedback-link"
+                   href="https://docs.google.com/forms/d/1xoBHd9szkrjVSsM5ZfyjFl3ZG8xgNvtlbQddYoi8DSk/preview"
+                   target="_blank">
+                    Open Feedback Form
+                </a>
+            </p>
+        </div>
 
-<p>
-    After downloading, open the APK file on your Android device.
-    If you see a security message, choose <strong>Allow installation</strong> or
-    <strong>Install anyway</strong>.
-</p>
-
-<div class="section-title">Step 3: Submit Feedback</div>
-
-<p>
-    After exploring the app, please complete the feedback form:
-</p>
-
-<p>
-    <a class="feedback-link"
-       href="https://docs.google.com/forms/d/1xoBHd9szkrjVSsM5ZfyjFl3ZG8xgNvtlbQddYoi8DSk/preview"
-       target="_blank">
-        Open Feedback Form
-    </a>
-</p>
+        <p class="footer-note">
+            This version of Interpill is for evaluation and study purposes only.
+        </p>
+    </div>
+</div>
 
 </body>
 </html>
