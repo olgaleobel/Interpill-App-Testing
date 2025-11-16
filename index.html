@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -75,6 +75,14 @@
             margin: 4px 0 10px;
         }
 
+        .about-main {
+            margin-bottom: 6px;
+        }
+
+        .about-sub {
+            margin-top: 14px; /* увеличенное расстояние до следующей строки */
+        }
+
         .steps {
             background: #f7fafc;
             border-radius: 12px;
@@ -118,13 +126,25 @@
             text-align: center;
         }
 
+        /* Ссылка “Learn more” и прочие */
+        .feedback-link {
+            color: var(--primary-dark);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .feedback-link:hover {
+            text-decoration: underline;
+        }
+
         /* Ссылка на Appetize */
         .browser-test-block {
-            margin-top: 26px;
+            margin-top: 18px;
             padding: 14px 18px;
             background: #f2fcf7;
             border-left: 4px solid var(--primary);
             border-radius: 8px;
+            font-size: 14px;
         }
 
         .browser-test-block a {
@@ -135,6 +155,12 @@
 
         .browser-test-block a:hover {
             text-decoration: underline;
+        }
+
+        .browser-small-note {
+            font-size: 12px;
+            color: #6b7785;
+            margin-top: 6px;
         }
 
         .footer-note {
@@ -159,32 +185,26 @@
         <!-- About Interpill -->
         <div class="section">
             <div class="section-title">About Interpill</div>
-            <p>
+            <p class="about-main">
                 Interpill provides personalised drug–drug interaction checks.
-                <br>Tap below to download or test the app.
+                <a class="feedback-link" href="about.html">Learn more →</a>
+            </p>
+            <p class="about-sub">
+                Tap below to download or test the app.
             </p>
         </div>
 
         <!-- Step 1 – Download -->
         <div class="section download-section">
             <div class="section-title">Step&nbsp;1 – Download the app</div>
-            <p>Tap the button below to download the Interpill APK to your Android device.</p>
+            <p>Tap the button below to download the Interpill app to your Android device.</p>
 
             <a class="download-btn"
                href="https://github.com/olgaleobel/Interpill-App-Testing/releases/download/v1.0-testing/composeApp-beta-34.apk">
-                Download Interpill APK
+                Download Interpill App
             </a>
 
             <p class="small-note">The file will appear in your <em>Downloads</em> folder.</p>
-        </div>
-
-        <!-- Alternative – Browser Testing -->
-        <div class="browser-test-block">
-            <strong>No Android phone?</strong><br>
-            You can test Interpill directly in your browser:<br>
-            👉 <a href="https://appetize.io/app/b_dssjraxcika2uoobbf3x23mshq" target="_blank">
-                Launch Interpill Online (Appetize)
-            </a>
         </div>
 
         <!-- Step 2 – Install -->
@@ -213,6 +233,18 @@
                    target="_blank">
                     Open Feedback Form
                 </a>
+            </p>
+        </div>
+
+        <!-- Alternative – Browser Testing (в самом конце) -->
+        <div class="browser-test-block">
+            <strong>No Android phone?</strong><br>
+            You can test Interpill directly in your browser:<br>
+            👉 <a href="https://appetize.io/app/b_dssjraxcika2uoobbf3x23mshq" target="_blank">
+                Launch Interpill Online (Appetize)
+            </a>
+            <p class="browser-small-note">
+                Please note: the browser version does not support scanning medication packaging.
             </p>
         </div>
 
