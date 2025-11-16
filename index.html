@@ -40,7 +40,6 @@
             margin-bottom: 8px;
         }
 
-        /* крупный логотип, заполняющий квадрат */
         .app-icon {
             width: 64px;
             height: 64px;
@@ -75,6 +74,16 @@
         p {
             font-size: 15px;
             margin: 4px 0 10px;
+        }
+
+        /* список в About */
+        .about-list {
+            margin: 4px 0 6px 18px;
+            padding: 0;
+        }
+        .about-list li {
+            font-size: 15px;
+            margin-bottom: 4px;
         }
 
         .steps {
@@ -159,15 +168,20 @@
             </div>
         </div>
 
-        <!-- Новый блок с целью и кратким описанием приложения -->
+        <!-- Упрощённый блок About Interpill -->
         <div class="section">
             <div class="section-title">About Interpill</div>
             <p>
-                The primary purpose of Interpill is to provide personalised drug–drug interaction checks.
-                In addition, the app allows users to scan medication packaging, access instructions and safety
-                information (via RxNorm, OpenFDA and DailyMed), and use a medication schedule with quick
-                interaction checks for all added medicines. Interaction analysis is personalised using the
-                user’s recorded allergies and medical conditions.
+                Interpill is a mobile app designed to help users check personalised drug–drug interactions.
+                It also allows you to:
+            </p>
+            <ul class="about-list">
+                <li>scan medication packaging,</li>
+                <li>view key instructions and safety information,</li>
+                <li>keep a simple medication schedule with quick interaction checks.</li>
+            </ul>
+            <p>
+                Interaction analysis is personalised using your recorded allergies and medical conditions.
             </p>
         </div>
 
@@ -214,7 +228,6 @@
             </p>
         </div>
 
-        <!-- Блок для пользователей без Android-устройства -->
         <div class="section">
             <div class="section-title">No Android phone?</div>
             <p>
