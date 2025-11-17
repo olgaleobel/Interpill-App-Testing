@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interpill – Example testing scenarios</title>
+    <style>
+        :root {
+            --primary: #1c8b6a;
+            --primary-dark: #13614a;
+            --accent: #eaf8f3;
+            --bg: #f3f6fa;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle at top, #e4f3ff 0, #f3f6fa 40%, #f3f6fa 100%);
+            color: #333;
+        }
+
+        .wrapper {
+            max-width: 720px;
+            margin: 40px auto;
+            padding: 0 16px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 28px 22px 26px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+        }
+
+        .app-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 10px;
+        }
+
+        .app-icon {
+            width: 72px;
+            height: 72px;
+            border-radius: 16px;
+            display: block;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin: 0 0 4px;
+            color: #1f2933;
+        }
+
+        .subtitle {
+            margin: 0;
+            font-size: 14px;
+            color: #6b7785;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 6px;
+            color: #243441;
+        }
+
+        p {
+            font-size: 15px;
+            margin: 4px 0 10px;
+        }
+
+        ol {
+            margin: 4px 0 12px 20px;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 6px;
+            font-size: 15px;
+        }
+
+        .note {
+            font-size: 13px;
+            color: #6b7785;
+            margin-top: 10px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 18px;
+            font-size: 14px;
+            color: var(--primary-dark);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 22px 16px 20px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="card">
+        <div class="app-header">
+            <img class="app-icon" src="interpill-logo.png" alt="Interpill logo">
+            <div>
+                <h1>Interpill – Example testing scenarios</h1>
+                <p class="subtitle">
+                    Optional prompts to help you explore the app during testing.
+                </p>
+            </div>
+        </div>
+
+        <p>
+            You may use Interpill in any way that feels natural to you. The scenarios below are
+            suggestions that can help you try different parts of the app. You do not need to
+            complete all of them.
+        </p>
+
+        <h2>Scenario 1 – Checking your usual medicines</h2>
+        <ol>
+            <li>Add two or three medicines that you take regularly to the list.</li>
+            <li>Run an interaction check for these medicines.</li>
+            <li>Read the interaction summary and any highlighted notes.</li>
+            <li>Consider whether the information is clear and easy to understand.</li>
+        </ol>
+
+        <h2>Scenario 2 – Adding a new medicine</h2>
+        <ol>
+            <li>Imagine that your doctor has added a new medicine to your current treatment.</li>
+            <li>Add this new medicine to the list alongside the existing ones.</li>
+            <li>Run an interaction check again and compare the results.</li>
+            <li>Note whether it is obvious what has changed and how it is shown on screen.</li>
+        </ol>
+
+        <h2>Scenario 3 – Using the schedule</h2>
+        <ol>
+            <li>Open the medication schedule and add at least two medicines with different times.</li>
+            <li>Check how easy it is to review what you are taking in a single day.</li>
+            <li>Use the quick interaction check from the schedule view, if available.</li>
+        </ol>
+
+        <h2>Scenario 4 – Looking up information about one medicine</h2>
+        <ol>
+            <li>Search for a single medicine in the app.</li>
+            <li>Open its information page and scroll through the main sections (for example indications, warnings, interactions).</li>
+            <li>Decide whether the layout and wording help you to find the information you would expect.</li>
+        </ol>
+
+        <p class="note">
+            Please remember that Interpill is a research prototype and is not a substitute for
+            professional medical advice. Do not change any real treatment on the basis of this app.
+        </p>
+
+        <a class="back-link" href="index.html">← Back to main download page</a>
+    </div>
+</div>
+
+</body>
+</html>
