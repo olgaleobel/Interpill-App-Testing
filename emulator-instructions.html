@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+Вот обновлённый файл с кнопкой «Back to main download page» внизу:
+
+```html
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -67,17 +70,27 @@
             color: #1f2933;
         }
 
-        a.back-link {
+        /* Button back to main page */
+        .back-link {
             display: inline-block;
-            margin-top: 14px;
+            margin-top: 16px;
+            padding: 10px 22px;
             font-size: 14px;
             color: var(--primary-dark);
+            background-color: #ffffff;
+            border: 2px solid var(--primary);
+            border-radius: 10px;
             text-decoration: none;
             font-weight: bold;
         }
 
-        a.back-link:hover {
-            text-decoration: underline;
+        .back-link:hover {
+            background-color: #eaf8f3;
+            text-decoration: none;
+        }
+
+        .back-container {
+            margin-top: 10px;
         }
 
         @media (max-width: 480px) {
@@ -152,9 +165,12 @@
             </a>
         </p>
 
-        <a class="back-link" href="index.html">← Back to main download page</a>
+        <div class="back-container">
+            <a class="back-link" href="index.html">← Back to main download page</a>
+        </div>
     </div>
 </div>
 
 </body>
 </html>
+```
