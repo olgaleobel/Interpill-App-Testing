@@ -1,6 +1,3 @@
-Вот файл целиком с кнопкой для формы обратной связи (и сохранённым остальным содержанием):
-
-```html
 <!DOCTYPE html>  
 <html lang="en">
 <head>
@@ -83,7 +80,7 @@
         }
 
         .about-sub {
-            margin-top: 14px; /* увеличенное расстояние до следующей строки */
+            margin-top: 14px; /* extra space before the next line */
         }
 
         .steps {
@@ -102,7 +99,7 @@
             color: #1f2933;
         }
 
-        /* Кнопка загрузки */
+        /* Download button */
         .download-btn {
             display: inline-block;
             background-color: var(--primary);
@@ -129,7 +126,7 @@
             text-align: center;
         }
 
-        /* Ссылка “Learn more” и прочие текстовые ссылки */
+        /* Text links such as “Learn more” */
         .feedback-link {
             color: var(--primary-dark);
             font-weight: bold;
@@ -140,7 +137,7 @@
             text-decoration: underline;
         }
 
-        /* Кнопка для feedback form (secondary) */
+        /* Feedback form button (secondary) */
         .feedback-btn {
             display: inline-block;
             background-color: #ffffff;
@@ -158,7 +155,7 @@
             background-color: var(--accent);
         }
 
-        /* Нижний блок "No Android phone?" */
+        /* Bottom block */
         .browser-test-block {
             margin-top: 18px;
             padding: 14px 18px;
@@ -257,17 +254,19 @@
             </p>
         </div>
 
-        <!-- Alternative – Contact form (instead of emulator) -->
+        <!-- Alternative – emulator + contact form -->
         <div class="browser-test-block">
-            <strong>No Android phone or questions about testing?</strong><br>
-            If you would like to take part in testing but do not have access to an Android device,
-            or if you have any questions, please
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd70pgmCUoTK13EouzFaOLE9X7BAcdEoh62tE_TA-fabQdCZg/viewform?usp=header"
-               target="_blank">
-                fill in this contact form →
+            <strong>No Android phone but would like to test the app?</strong><br>
+            You can try Interpill in a free online emulator (without the packaging scan feature):
+            <a href="emulator.html">
+                test Interpill in the online emulator →
             </a>
             <p class="browser-small-note">
-                You can use the form to ask about alternatives to Android devices or any other questions about Interpill testing.
+                Questions about taking part in testing? Please
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd70pgmCUoTK13EouzFaOLE9X7BAcdEoh62tE_TA-fabQdCZg/viewform?usp=header"
+                   target="_blank">
+                    fill in this contact form →
+                </a>
             </p>
         </div>
 
@@ -279,4 +278,3 @@
 
 </body>
 </html>
-```
