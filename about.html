@@ -1,3 +1,13 @@
+Да, разница в размере идёт только из-за стилей:
+
+* на главной странице и emulator.html иконка `72×72` с `border-radius: 16px;`
+* в `about.html` — `64×64` и `border-radius: 18px;`
+
+Технически это не ошибка, просто другой размер. Если хочешь визуальную консистентность, лучше сделать такие же параметры, как на остальных страницах.
+
+Вот файл `about.html` с выровненным размером логотипа (72×72, radius 16):
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,9 +51,9 @@
         }
 
         .app-icon {
-            width: 64px;
-            height: 64px;
-            border-radius: 18px;
+            width: 72px;
+            height: 72px;
+            border-radius: 16px;
             display: block;
             object-fit: cover;
         }
@@ -127,10 +137,10 @@
 
         <h2>Purpose of the app</h2>
         <p>
-        Interpill is a Kotlin Multiplatform mobile application designed to provide
-        <strong>personalised medicine-interaction checks</strong>. Its purpose is to give
-        users a clearer understanding of how their medicines may interact, taking account
-        of their individual health profile.
+            Interpill is a Kotlin Multiplatform mobile application designed to provide
+            <strong>personalised medicine-interaction checks</strong>. Its purpose is to give
+            users a clearer understanding of how their medicines may interact, taking account
+            of their individual health profile.
         </p>
 
         <h2>Key functionality</h2>
@@ -186,4 +196,4 @@
 
 </body>
 </html>
-
+```
