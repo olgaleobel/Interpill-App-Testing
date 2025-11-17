@@ -1,3 +1,6 @@
+Вот файл целиком с кнопкой для формы обратной связи (и сохранённым остальным содержанием):
+
+```html
 <!DOCTYPE html>  
 <html lang="en">
 <head>
@@ -126,7 +129,7 @@
             text-align: center;
         }
 
-        /* Ссылка “Learn more” и прочие */
+        /* Ссылка “Learn more” и прочие текстовые ссылки */
         .feedback-link {
             color: var(--primary-dark);
             font-weight: bold;
@@ -135,6 +138,24 @@
 
         .feedback-link:hover {
             text-decoration: underline;
+        }
+
+        /* Кнопка для feedback form (secondary) */
+        .feedback-btn {
+            display: inline-block;
+            background-color: #ffffff;
+            color: var(--primary-dark);
+            border: 2px solid var(--primary);
+            padding: 10px 24px;
+            margin-top: 6px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .feedback-btn:hover {
+            background-color: var(--accent);
         }
 
         /* Нижний блок "No Android phone?" */
@@ -228,10 +249,10 @@
             <div class="section-title">Step&nbsp;3 – Share your feedback</div>
             <p>Please complete the short feedback form after testing the app:</p>
             <p>
-                <a class="feedback-link"
+                <a class="feedback-btn"
                    href="https://docs.google.com/forms/d/1xoBHd9szkrjVSsM5ZfyjFl3ZG8xgNvtlbQddYoi8DSk/preview"
                    target="_blank">
-                    Open Feedback Form
+                    Open feedback form
                 </a>
             </p>
         </div>
@@ -258,3 +279,4 @@
 
 </body>
 </html>
+```
