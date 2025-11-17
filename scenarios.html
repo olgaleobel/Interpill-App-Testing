@@ -125,44 +125,64 @@
         </div>
 
         <p>
-            You may use Interpill in any way that feels natural to you. The scenarios below are
-            suggestions that can help you try different parts of the app. You do not need to
-            complete all of them.
+            You may use Interpill in any way that feels natural to you.  
+            The scenarios below are designed to help you try different parts of the app.  
+            You do not need to complete all of them.
         </p>
 
-        <h2>Scenario 1 – Checking your usual medicines</h2>
+        <!-- Scenario 1 -->
+        <h2>Scenario&nbsp;1 – Checking two medicines together</h2>
         <ol>
-            <li>Add two or three medicines that you take regularly to the list.</li>
-            <li>Run an interaction check for these medicines.</li>
-            <li>Read the interaction summary and any highlighted notes.</li>
-            <li>Consider whether the information is clear and easy to understand.</li>
+            <li>Find two medicines in the app (for example <strong>Caffeine</strong> and <strong>Ibuprofen</strong>).</li>
+            <li>Run an interaction check for them.</li>
+            <li>Read the result and any highlighted warnings.</li>
+            <li>Decide whether the explanation feels clear.</li>
         </ol>
 
-        <h2>Scenario 2 – Adding a new medicine</h2>
+        <!-- Scenario 2 -->
+        <h2>Scenario&nbsp;2 – Checking a medicine that may not be suitable</h2>
         <ol>
-            <li>Imagine that your doctor has added a new medicine to your current treatment.</li>
-            <li>Add this new medicine to the list alongside the existing ones.</li>
-            <li>Run an interaction check again and compare the results.</li>
-            <li>Note whether it is obvious what has changed and how it is shown on screen.</li>
+            <li>Imagine that the person checking the medicine has a history of stomach ulcers.</li>
+            <li>Look up <strong>Aspirin</strong> and check how the app presents any risks.</li>
+            <li>Review the warnings and consider how visible they are.</li>
         </ol>
 
-        <h2>Scenario 3 – Using the schedule</h2>
+        <!-- Scenario 3 -->
+        <h2>Scenario&nbsp;3 – Allergy-related risk</h2>
         <ol>
-            <li>Open the medication schedule and add at least two medicines with different times.</li>
-            <li>Check how easy it is to review what you are taking in a single day.</li>
-            <li>Use the quick interaction check from the schedule view, if available.</li>
+            <li>Imagine a person with an allergy to fish or fish oil.</li>
+            <li>Find a product containing <strong>Omega-3 acids</strong> and check its information.</li>
+            <li>See whether the app highlights anything relevant to the allergy.</li>
         </ol>
 
-        <h2>Scenario 4 – Looking up information about one medicine</h2>
+        <!-- Scenario 4 -->
+        <h2>Scenario&nbsp;4 – Trying the daily medication schedule</h2>
         <ol>
-            <li>Search for a single medicine in the app.</li>
-            <li>Open its information page and scroll through the main sections (for example indications, warnings, interactions).</li>
-            <li>Decide whether the layout and wording help you to find the information you would expect.</li>
+            <li>Add two medicines of your choice to a daily schedule (for example one in the morning, one in the evening).</li>
+            <li>Check how the schedule displays what is taken on that day.</li>
+            <li>Use the quick interaction check from the schedule if it is available.</li>
+        </ol>
+
+        <!-- Scenario 5 -->
+        <h2>Scenario&nbsp;5 – Looking up detailed information on one medicine</h2>
+        <ol>
+            <li>Search for a medicine you know (for example <strong>Paracetamol</strong>).</li>
+            <li>Open its information page and scroll through warnings, interactions and other sections.</li>
+            <li>See whether the layout helps you find the information you expect.</li>
+        </ol>
+
+        <!-- Scenario 6 -->
+        <h2>Scenario&nbsp;6 – Scanning a real medicine package (real device only)</h2>
+        <p><em>(This scenario is not available in the browser-based emulator.)</em></p>
+        <ol>
+            <li>Use the scanning feature to scan a medicine package (for example Paracetamol or Ibuprofen).</li>
+            <li>Confirm or correct the recognised medicine name.</li>
+            <li>Explore the information or run an interaction check if you wish.</li>
         </ol>
 
         <p class="note">
-            Please remember that Interpill is a research prototype and is not a substitute for
-            professional medical advice. Do not change any real treatment on the basis of this app.
+            Please remember that Interpill is a research prototype and not a substitute for
+            professional medical advice. Do not change any real treatment based on this app.
         </p>
 
         <a id="back-link" class="back-link" href="index.html">← Back</a>
@@ -170,22 +190,21 @@
 </div>
 
 <script>
-    (function () {
-        const params = new URLSearchParams(window.location.search);
-        const from = params.get('from');
-        const backLink = document.getElementById('back-link');
+(function () {
+    const params = new URLSearchParams(window.location.search);
+    const from = params.get('from');
+    const backLink = document.getElementById('back-link');
 
-        if (!backLink) return;
+    if (!backLink) return;
 
-        if (from === 'emulator') {
-            backLink.href = 'emulator.html';
-            backLink.textContent = '← Back to emulator page';
-        } else {
-            // default: go back to main download page
-            backLink.href = 'index.html';
-            backLink.textContent = '← Back to main download page';
-        }
-    })();
+    if (from === 'emulator') {
+        backLink.href = 'emulator.html';
+        backLink.textContent = '← Back to emulator page';
+    } else {
+        backLink.href = 'index.html';
+        backLink.textContent = '← Back to main download page';
+    }
+})();
 </script>
 
 </body>
