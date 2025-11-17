@@ -1,0 +1,237 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interpill – Test with Online Emulator</title>
+    <style>
+        :root {
+            --primary: #1c8b6a;
+            --primary-dark: #13614a;
+            --accent: #eaf8f3;
+            --bg: #f3f6fa;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle at top, #e4f3ff 0, #f3f6fa 40%, #f3f6fa 100%);
+            color: #333;
+        }
+
+        .wrapper {
+            max-width: 720px;
+            margin: 40px auto;
+            padding: 0 16px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 28px 22px 26px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+        }
+
+        .app-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 12px;
+        }
+
+        .app-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 16px;
+            display: block;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin: 0 0 4px;
+            color: #1f2933;
+        }
+
+        .subtitle {
+            margin: 0;
+            font-size: 14px;
+            color: #6b7785;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 6px;
+            color: #243441;
+        }
+
+        p {
+            font-size: 15px;
+            margin: 4px 0 10px;
+        }
+
+        ol {
+            margin: 6px 0 10px 20px;
+            padding: 0;
+            font-size: 15px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .primary-btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: #fff;
+            padding: 12px 28px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .primary-btn:hover {
+            background-color: var(--primary-dark);
+        }
+
+        .secondary-btn {
+            display: inline-block;
+            background-color: #ffffff;
+            color: var(--primary-dark);
+            border: 2px solid var(--primary);
+            padding: 10px 22px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .secondary-btn:hover {
+            background-color: var(--accent);
+        }
+
+        .note-box {
+            margin-top: 14px;
+            padding: 10px 12px;
+            background: #f7fafc;
+            border-radius: 10px;
+            font-size: 13px;
+            color: #56606c;
+        }
+
+        .footer-note {
+            margin-top: 18px;
+            font-size: 12px;
+            color: #8a94a3;
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 22px 16px 20px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="card">
+        <div class="app-header">
+            <img class="app-icon" src="interpill-logo.png" alt="Interpill logo">
+            <div>
+                <h1>Interpill – Testing with Online Emulator</h1>
+                <p class="subtitle">
+                    If you do not have an Android phone, you can still try Interpill using a free online emulator.
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Before you start</div>
+            <p>
+                The online emulator runs Interpill inside your browser for up to around 30 minutes of use.
+                The main interaction and information features are available, but
+                <strong>scanning medication packaging is not supported</strong> in this mode.
+            </p>
+        </div>
+
+        <!-- Step 1 -->
+        <div class="section">
+            <div class="section-title">Step&nbsp;1 – Open the emulator</div>
+            <p>Click the button below to open Interpill in the online Android emulator.</p>
+            <p>
+                <a class="primary-btn"
+                   href="https://appetize.io/app/b_dssjraxcika2uoobbf3x23mshq"
+                   target="_blank">
+                    Open Interpill in online emulator
+                </a>
+            </p>
+            <div class="note-box">
+                If the emulator opens in a new tab and you see a loading screen, please wait a few seconds
+                until the virtual device appears.
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="section">
+            <div class="section-title">Step&nbsp;2 – Create an account or sign in</div>
+            <p>
+                The emulator website may ask you to sign in or create a free account before starting the session.
+            </p>
+            <ol>
+                <li>Choose <strong>Sign up</strong> or <strong>Log in</strong> on the emulator website.</li>
+                <li>You can usually use a Google account or an email address with a password.</li>
+                <li>After signing in, return to the Interpill emulator page if needed.</li>
+            </ol>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="section">
+            <div class="section-title">Step&nbsp;3 – Use Interpill in the emulator</div>
+            <ol>
+                <li>When the virtual phone appears, wait until Interpill finishes loading.</li>
+                <li>Use the mouse as a finger: click to tap, click–and–drag to swipe.</li>
+                <li>Try searching for medicines, reviewing interaction information and exploring the schedule.</li>
+            </ol>
+            <div class="note-box">
+                Emulator sessions may be time-limited. If the screen resets or stops responding,
+                you can simply refresh the page to start a new session.
+                The scanning feature requires a real camera and is therefore not available in the emulator.
+            </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="section">
+            <div class="section-title">Step&nbsp;4 – Share your feedback</div>
+            <p>
+                After you have finished exploring Interpill in the emulator, please complete the main feedback form:
+            </p>
+            <p>
+                <a class="secondary-btn"
+                   href="https://docs.google.com/forms/d/1xoBHd9szkrjVSsM5ZfyjFl3ZG8xgNvtlbQddYoi8DSk/preview"
+                   target="_blank">
+                    Open feedback form
+                </a>
+            </p>
+        </div>
+
+        <p class="footer-note">
+            This page is intended for study and evaluation purposes. If you encounter any technical issues with
+            the emulator, you can also describe them in the feedback form.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
+```
