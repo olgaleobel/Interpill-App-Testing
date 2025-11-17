@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -116,6 +117,16 @@
             background-color: var(--accent);
         }
 
+        .feedback-link {
+            color: var(--primary-dark);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .feedback-link:hover {
+            text-decoration: underline;
+        }
+
         .note-box {
             margin-top: 14px;
             padding: 10px 12px;
@@ -209,13 +220,21 @@
 
         <!-- Step 3 -->
         <div class="section">
-            <div class="section-title">Step&nbsp;3 – Use Interpill in the emulator</div>
-            <ol>
-                <li>When the virtual phone appears, wait until Interpill finishes loading.</li>
-                <li>Use the mouse as a finger: click to tap, click–and–drag to swipe.</li>
-                <li>Try searching for medicines, reviewing interaction information and exploring the schedule.</li>
-            </ol>
+            <div class="section-title">Step&nbsp;3 – Try Interpill in the emulator</div>
+            <p>
+                When the virtual phone appears, wait until Interpill finishes loading.
+            </p>
+            <p>
+                Once Interpill is ready, you can explore it freely or follow some suggested
+                testing scenarios prepared for participants.
+            </p>
+            <p>
+                <a class="feedback-link" href="scenarios.html">
+                    Open example testing scenarios →
+                </a>
+            </p>
             <div class="note-box">
+                Use the mouse as a finger: click to tap, click–and–drag to swipe.  
                 Emulator sessions may be time-limited. If the screen resets or stops responding,
                 you can simply refresh the page to start a new session.
                 The scanning feature requires a real camera and is therefore not available in the emulator.
@@ -242,10 +261,10 @@
             If you encounter any technical issues with the emulator, you can also describe them in the feedback form.
         </p>
 
-        <!-- BACK LINK ADDED -->
         <a class="back-link" href="index.html">← Back to main download page</a>
     </div>
 </div>
 
 </body>
 </html>
+```
