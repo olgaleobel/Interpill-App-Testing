@@ -1,9 +1,14 @@
+Вот версия страницы с **Sign up / Log in** и понятными шагами для онлайн-эмулятора. Она в том же стиле, что `index.html`: логотип, аккуратная карточка, зелёная кнопка, шаги и кнопка возврата.
+
+Скопируй **весь код** в `emulator.html` (полностью заменить содержимое файла):
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interpill – Test in your browser</title>
+    <title>Interpill – Test in browser</title>
     <style>
         :root {
             --primary: #1c8b6a;
@@ -91,7 +96,6 @@
             color: #1f2933;
         }
 
-        /* зелёная основная кнопка */
         .primary-btn {
             display: inline-block;
             background-color: var(--primary);
@@ -124,7 +128,6 @@
             margin-top: 8px;
         }
 
-        /* кнопка "назад" */
         .back-btn {
             display: inline-block;
             margin-top: 18px;
@@ -160,74 +163,86 @@
         <div class="app-header">
             <img class="app-icon" src="interpill-logo.png" alt="Interpill logo">
             <div>
-                <h1>Interpill – Test in your browser</h1>
+                <h1>Interpill – Testing without an Android phone</h1>
                 <p class="subtitle">
-                    If you do not have an Android phone, you can run Interpill in an online Android emulator.
+                    You can try Interpill in a web-based Android emulator if you do not have an Android device.
                 </p>
             </div>
         </div>
 
+        <div class="section">
+            <div class="section-title">Before you start</div>
+            <p>
+                The online emulator runs Interpill on a virtual Android phone in your browser.
+                Some features, such as camera-based scanning of medication packaging, are
+                <strong>not available</strong> in this mode.
+            </p>
+        </div>
+
         <div class="section centered">
-            <div class="section-title">Step&nbsp;1 – Open the emulator</div>
-            <p>Click the button below to open Interpill in your web browser.</p>
-
-            <a class="primary-btn"
-               href="https://appetize.io/app/b_dssjraxcika2uoobbf3x23mshq"
-               target="_blank">
-                Open Interpill in browser
-            </a>
-
+            <div class="section-title">Step&nbsp;1 – Sign up or log in</div>
+            <p>
+                Open the emulator provider’s site in a new tab and create a free account
+                (or log in if you already have one).
+            </p>
+            <p>
+                <a class="primary-btn"
+                   href="https://appetize.io/"
+                   target="_blank">
+                    Open emulator site (Sign up / Log in)
+                </a>
+            </p>
             <p class="small-note">
-                A new tab will open with a virtual Android phone.
-                A stable internet connection is recommended.
+                A free account normally provides a limited amount of testing time each month.
+            </p>
+        </div>
+
+        <div class="section centered">
+            <div class="section-title">Step&nbsp;2 – Open the Interpill session</div>
+            <p>
+                After signing in, use the link below to start the Interpill emulator session
+                in your browser.
+            </p>
+            <p>
+                <a class="primary-btn"
+                   href="https://appetize.io/app/b_dssjraxcika2uoobbf3x23mshq"
+                   target="_blank">
+                    Launch Interpill emulator
+                </a>
+            </p>
+            <p class="small-note">
+                You may see a “Tap to play” button – click it to start the virtual device.
             </p>
         </div>
 
         <div class="section">
-            <div class="section-title">Step&nbsp;2 – Use the virtual phone</div>
+            <div class="section-title">Step&nbsp;3 – Test Interpill</div>
             <div class="steps">
                 <div class="step">
-                    <strong>1.</strong> When the virtual phone appears, tap the screen or the
-                    <em>Tap to play</em> button to start the session.
+                    <strong>1.</strong> Once the virtual phone has loaded, use Interpill as you would
+                    on a normal Android device: search for medicines, add them to checks,
+                    and review the interaction information.
                 </div>
                 <div class="step">
-                    <strong>2.</strong> Once Interpill loads, use it as you would on a normal Android device:
-                    search for medicines, add them to checks, and review the interaction information.
-                </div>
-                <div class="step">
-                    <strong>3.</strong> If the session stops or times out, you can reopen the link
-                    and start again.
+                    <strong>2.</strong> If the session stops or times out, you can reopen the emulator
+                    link and start again while your free time is still available.
                 </div>
             </div>
             <p class="note">
-                Please note that camera-based scanning of medication packaging is not available
-                in the browser emulator.
+                Camera-based scanning of medication packaging is not supported in the browser
+                emulator. All other main interaction features are available for testing.
             </p>
         </div>
 
         <div class="section">
-            <div class="section-title">Step&nbsp;3 – Submit your feedback</div>
+            <div class="section-title">Step&nbsp;4 – Submit your feedback</div>
             <p>
-                After finishing your testing session, please complete the feedback form:
+                After testing Interpill in the emulator, please complete the feedback form:
             </p>
             <p>
                 <a href="https://docs.google.com/forms/d/1xoBHd9szkrjVSsM5ZfyjFl3ZG8xgNvtlbQddYoi8DSk/preview"
                    target="_blank">
                     Open feedback form
-                </a>
-            </p>
-        </div>
-
-        <div class="section">
-            <div class="section-title">Step&nbsp;4 – Need help?</div>
-            <p>
-                If the emulator does not work on your device, or you are unsure how to proceed,
-                you can contact me using the testing contact form:
-            </p>
-            <p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd70pgmCUoTK13EouzFaOLE9X7BAcdEoh62tE_TA-fabQdCZg/viewform?usp=header"
-                   target="_blank">
-                    Open testing contact form
                 </a>
             </p>
         </div>
@@ -238,3 +253,6 @@
 
 </body>
 </html>
+```
+
+Если хочешь, потом можем чуть упростить текст (например, убрать упоминание про ограничение по минутам) или добавить короткий скриншот-гайд, но базовая версия с **Sign up / Log in** и кнопкой запуска эмулятора уже есть.
