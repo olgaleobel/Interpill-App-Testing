@@ -165,9 +165,28 @@
             professional medical advice. Do not change any real treatment on the basis of this app.
         </p>
 
-        <a class="back-link" href="index.html">← Back to main download page</a>
+        <a id="back-link" class="back-link" href="index.html">← Back</a>
     </div>
 </div>
+
+<script>
+    (function () {
+        const params = new URLSearchParams(window.location.search);
+        const from = params.get('from');
+        const backLink = document.getElementById('back-link');
+
+        if (!backLink) return;
+
+        if (from === 'emulator') {
+            backLink.href = 'emulator.html';
+            backLink.textContent = '← Back to emulator page';
+        } else {
+            // default: go back to main download page
+            backLink.href = 'index.html';
+            backLink.textContent = '← Back to main download page';
+        }
+    })();
+</script>
 
 </body>
 </html>
