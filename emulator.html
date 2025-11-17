@@ -181,52 +181,62 @@
         <div class="section">
             <div class="section-title">Before you start</div>
             <p>
-                The online emulator runs Interpill app inside your browser for up to around 30 minutes of use.
+                In this option you will first download the Interpill app (APK file) to your computer,
+                then upload it to a free online Android emulator (for example Appetize.io).
                 The main interaction and information features are available, but
                 <strong>scanning medication packaging is not supported</strong> in this mode.
             </p>
         </div>
 
-        <!-- Step 1 -->
+        <!-- Step 1 – Download the APK -->
         <div class="section">
-            <div class="section-title">Step&nbsp;1 – Open the emulator</div>
-            <p>Click the button below to open Interpill app in the online Android emulator.</p>
+            <div class="section-title">Step&nbsp;1 – Download the Interpill app (APK)</div>
+            <p>
+                Download the Interpill APK file to your computer. You will use this file in the next step
+                when uploading the app to the emulator website.
+            </p>
             <p>
                 <a class="primary-btn"
-                   href="https://appetize.io/app/b_dssjraxcika2uoobbf3x23mshq"
+                   href="https://github.com/olgaleobel/Interpill-App-Testing/releases/download/v1.0-testing/composeApp-beta-34.apk"
                    target="_blank">
-                    Open Interpill app in online emulator
+                    Download Interpill app (APK)
                 </a>
             </p>
             <div class="note-box">
-                If the emulator opens in a new tab and you see a loading screen, please wait a few seconds
-                until the virtual device appears.
+                The APK file will normally appear in your <em>Downloads</em> folder unless you choose a different location.
             </div>
         </div>
 
-        <!-- Step 2 -->
+        <!-- Step 2 – Create emulator account and upload APK -->
         <div class="section">
-            <div class="section-title">Step&nbsp;2 – Create an account or sign in</div>
+            <div class="section-title">Step&nbsp;2 – Create a free emulator account and upload the APK</div>
             <p>
-                The emulator website may ask you to sign in or create a free account before starting the session.
+                One option is to use <strong>Appetize.io</strong>, which offers a free tier with limited minutes.
+                The exact interface may change slightly over time, but the basic steps are:
             </p>
             <ol>
-                <li>Choose <strong>Sign up</strong> or <strong>Log in</strong> on the emulator website.</li>
-                <li>You can usually use a Google account or an email address with a password.</li>
-                <li>After signing in, return to the Interpill emulator page if needed.</li>
+                <li>Open <a class="feedback-link" href="https://appetize.io" target="_blank">https://appetize.io</a> in your browser.</li>
+                <li>Select <strong>Sign up</strong> and create a free account, or <strong>Log in</strong> if you already have one.</li>
+                <li>After signing in, choose the option to upload a new app (for example <em>Upload</em> or <em>Add new app</em>).</li>
+                <li>When prompted, select the Interpill APK file you downloaded in Step&nbsp;1 and wait for the upload to finish.</li>
             </ol>
+            <div class="note-box">
+                Once the upload is complete, Interpill should appear as an app entry in your emulator dashboard.
+            </div>
         </div>
 
-        <!-- Step 3 -->
+        <!-- Step 3 – Run Interpill in the emulator -->
         <div class="section">
             <div class="section-title">Step&nbsp;3 – Try Interpill app in the emulator</div>
             <p>
-                When the virtual phone appears, wait until Interpill app finishes loading.
+                From your emulator dashboard, start the Interpill app (for example by clicking
+                its card and choosing <em>Launch</em>).
             </p>
-            <p>
-                Once Interpill app is ready, you can explore it freely or follow some suggested
-                testing scenarios prepared for participants.
-            </p>
+            <ol>
+                <li>When the virtual phone appears, wait until Interpill app finishes loading.</li>
+                <li>Use the mouse as a finger: click to tap, click–and–drag to swipe.</li>
+                <li>You can explore the app freely or follow some suggested testing scenarios.</li>
+            </ol>
             <p>
                 <a class="feedback-link" href="scenarios.html?from=emulator">
                     Open example testing scenarios →
@@ -234,12 +244,12 @@
             </p>
             <div class="note-box">
                 Emulator sessions may be time-limited. If the screen resets or stops responding,
-                you can simply refresh the page to start a new session.
+                you can usually refresh the page or start a new session from your emulator dashboard.
                 The scanning feature requires a real camera and is therefore not available in the emulator.
             </div>
         </div>
 
-        <!-- Step 4 -->
+        <!-- Step 4 – Feedback -->
         <div class="section">
             <div class="section-title">Step&nbsp;4 – Share your feedback</div>
             <p>
@@ -257,6 +267,15 @@
         <p class="footer-note">
             This page is intended for study and evaluation purposes.  
             If you encounter any technical issues with the emulator, you can also describe them in the feedback form.
+        </p>
+
+        <p class="footer-note">
+            Questions about taking part in testing or using the emulator? Please
+            <a class="feedback-link"
+               href="https://docs.google.com/forms/d/e/1FAIpQLSd70pgmCUoTK13EouzFaOLE9X7BAcdEoh62tE_TA-fabQdCZg/viewform?usp=header"
+               target="_blank">
+                fill in this contact form →
+            </a>
         </p>
 
         <a class="back-link" href="index.html">← Back to main download page</a>
