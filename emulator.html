@@ -1,13 +1,14 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interpill – Emulator Instructions</title>
+    <title>Interpill – Test in your browser</title>
     <style>
         :root {
             --primary: #1c8b6a;
             --primary-dark: #13614a;
+            --accent: #eaf8f3;
             --bg: #f3f6fa;
         }
 
@@ -28,27 +29,50 @@
         .card {
             background: #fff;
             border-radius: 16px;
-            padding: 26px 22px 24px;
+            padding: 28px 22px 26px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+        }
+
+        .app-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 10px;
+        }
+
+        .app-icon {
+            width: 72px;
+            height: 72px;
+            border-radius: 16px;
+            display: block;
         }
 
         h1 {
             font-size: 22px;
-            margin: 0 0 8px;
+            margin: 0 0 4px;
             color: #1f2933;
         }
 
-        p {
-            font-size: 15px;
-            margin: 6px 0 10px;
+        .subtitle {
+            margin: 0;
+            font-size: 14px;
+            color: #6b7785;
+        }
+
+        .section {
+            margin-top: 22px;
         }
 
         .section-title {
             font-weight: bold;
-            font-size: 15px;
-            margin-top: 16px;
-            margin-bottom: 4px;
+            font-size: 16px;
+            margin-bottom: 6px;
             color: #243441;
+        }
+
+        p {
+            font-size: 15px;
+            margin: 4px 0 10px;
         }
 
         .steps {
@@ -67,27 +91,55 @@
             color: #1f2933;
         }
 
-        /* Button back to main page */
-        .back-link {
+        /* зелёная основная кнопка */
+        .primary-btn {
             display: inline-block;
-            margin-top: 16px;
-            padding: 10px 22px;
-            font-size: 14px;
-            color: var(--primary-dark);
-            background-color: #ffffff;
-            border: 2px solid var(--primary);
+            background-color: var(--primary);
+            color: white;
+            padding: 14px 32px;
             border-radius: 10px;
             text-decoration: none;
+            font-size: 16px;
             font-weight: bold;
+            margin: 12px 0 4px;
         }
 
-        .back-link:hover {
-            background-color: #eaf8f3;
+        .primary-btn:hover {
+            background-color: var(--primary-dark);
+        }
+
+        .centered {
+            text-align: center;
+        }
+
+        .small-note {
+            font-size: 13px;
+            color: #6b7785;
+            text-align: center;
+        }
+
+        .note {
+            font-size: 13px;
+            color: #6b7785;
+            margin-top: 8px;
+        }
+
+        /* кнопка "назад" */
+        .back-btn {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 10px 22px;
+            border-radius: 10px;
+            border: 2px solid var(--primary);
+            color: var(--primary-dark);
             text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            background: #ffffff;
         }
 
-        .back-container {
-            margin-top: 10px;
+        .back-btn:hover {
+            background: var(--accent);
         }
 
         @media (max-width: 480px) {
@@ -104,67 +156,83 @@
 
 <div class="wrapper">
     <div class="card">
-        <h1>Testing Interpill using an Android emulator</h1>
 
-        <p>
-            These instructions are for participants who do not have an Android phone
-            but are willing to test the Interpill app using a virtual Android device
-            (emulator) on a computer.
-        </p>
-
-        <div class="section-title">Step 1 – Install an Android emulator</div>
-        <div class="steps">
-            <div class="step">
-                <strong>Option A (recommended for technical users):</strong>  
-                Install <em>Android Studio</em> from the official website and create a
-                virtual device (AVD) with any recent Android version.
-            </div>
-            <div class="step">
-                <strong>Option B (simpler, for non-technical users):</strong>  
-                Install a popular Android emulator such as BlueStacks, LDPlayer or
-                a similar tool for your operating system.
+        <div class="app-header">
+            <img class="app-icon" src="interpill-logo.png" alt="Interpill logo">
+            <div>
+                <h1>Interpill – Test in your browser</h1>
+                <p class="subtitle">
+                    If you do not have an Android phone, you can run Interpill in an online Android emulator.
+                </p>
             </div>
         </div>
 
-        <div class="section-title">Step 2 – Download the Interpill APK</div>
-        <p>
-            Download the APK file to your computer from the main download page:
-        </p>
-        <p>
-            <a href="index.html">Open the Interpill APK download page</a>
-        </p>
+        <div class="section centered">
+            <div class="section-title">Step&nbsp;1 – Open the emulator</div>
+            <p>Click the button below to open Interpill in your web browser.</p>
 
-        <div class="section-title">Step 3 – Install the APK in the emulator</div>
-        <div class="steps">
-            <div class="step">
-                <strong>1.</strong> Start the Android emulator and wait until it has fully loaded.
-            </div>
-            <div class="step">
-                <strong>2.</strong> Drag and drop the downloaded APK file onto the emulator window  
-                (or use the emulator’s “Install APK” menu option, if available).
-            </div>
-            <div class="step">
-                <strong>3.</strong> Follow the on-screen prompts inside the emulator to complete the installation.
-            </div>
-            <div class="step">
-                <strong>4.</strong> Open the <strong>Interpill</strong> app inside the emulator and test it as you would
-                on a normal Android phone.
-            </div>
-        </div>
-
-        <div class="section-title">Step 4 – Submit your feedback</div>
-        <p>
-            After testing the app in the emulator, please complete the same feedback form:
-        </p>
-        <p>
-            <a href="https://docs.google.com/forms/d/1xoBHd9szkrjVSsM5ZfyjFl3ZG8xgNvtlbQddYoi8DSk/preview" target="_blank">
-                Open Feedback Form
+            <a class="primary-btn"
+               href="https://appetize.io/app/b_dssjraxcika2uoobbf3x23mshq"
+               target="_blank">
+                Open Interpill in browser
             </a>
-        </p>
 
-        <div class="back-container">
-            <a class="back-link" href="index.html">← Back to main download page</a>
+            <p class="small-note">
+                A new tab will open with a virtual Android phone.
+                A stable internet connection is recommended.
+            </p>
         </div>
+
+        <div class="section">
+            <div class="section-title">Step&nbsp;2 – Use the virtual phone</div>
+            <div class="steps">
+                <div class="step">
+                    <strong>1.</strong> When the virtual phone appears, tap the screen or the
+                    <em>Tap to play</em> button to start the session.
+                </div>
+                <div class="step">
+                    <strong>2.</strong> Once Interpill loads, use it as you would on a normal Android device:
+                    search for medicines, add them to checks, and review the interaction information.
+                </div>
+                <div class="step">
+                    <strong>3.</strong> If the session stops or times out, you can reopen the link
+                    and start again.
+                </div>
+            </div>
+            <p class="note">
+                Please note that camera-based scanning of medication packaging is not available
+                in the browser emulator.
+            </p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Step&nbsp;3 – Submit your feedback</div>
+            <p>
+                After finishing your testing session, please complete the feedback form:
+            </p>
+            <p>
+                <a href="https://docs.google.com/forms/d/1xoBHd9szkrjVSsM5ZfyjFl3ZG8xgNvtlbQddYoi8DSk/preview"
+                   target="_blank">
+                    Open feedback form
+                </a>
+            </p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Step&nbsp;4 – Need help?</div>
+            <p>
+                If the emulator does not work on your device, or you are unsure how to proceed,
+                you can contact me using the testing contact form:
+            </p>
+            <p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd70pgmCUoTK13EouzFaOLE9X7BAcdEoh62tE_TA-fabQdCZg/viewform?usp=header"
+                   target="_blank">
+                    Open testing contact form
+                </a>
+            </p>
+        </div>
+
+        <a class="back-btn" href="index.html">← Back to main download page</a>
     </div>
 </div>
 
