@@ -1,9 +1,9 @@
-<!DOCTYPE html>  
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interpill – Download</title>
+    <title>Interpill – Test with Online Emulator</title>
     <style>
         :root {
             --primary: #1c8b6a;
@@ -37,19 +37,19 @@
             display: flex;
             align-items: center;
             gap: 14px;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
         }
 
         .app-icon {
-            width: 72px;
-            height: 72px;
+            width: 64px;
+            height: 64px;
             border-radius: 16px;
             display: block;
         }
 
         h1 {
             font-size: 22px;
-            margin: 0 0 2px;
+            margin: 0 0 4px;
             color: #1f2933;
         }
 
@@ -60,7 +60,7 @@
         }
 
         .section {
-            margin-top: 22px;
+            margin-top: 20px;
         }
 
         .section-title {
@@ -75,116 +75,82 @@
             margin: 4px 0 10px;
         }
 
-        .about-main {
+        ol {
+            margin: 6px 0 10px 20px;
+            padding: 0;
+            font-size: 15px;
+        }
+
+        li {
             margin-bottom: 6px;
         }
 
-        .about-sub {
-            margin-top: 14px;
-        }
-
-        .steps {
-            background: #f7fafc;
-            border-radius: 12px;
-            padding: 10px 12px;
-            margin-top: 6px;
-        }
-
-        .step {
-            margin-bottom: 6px;
-            font-size: 14px;
-        }
-
-        .step strong {
-            color: #1f2933;
-        }
-
-        /* Primary download button – слева */
-        .download-btn {
+        .primary-btn {
             display: inline-block;
             background-color: var(--primary);
-            color: white;
-            padding: 14px 32px;
-            margin: 14px 0 4px 0;
+            color: #fff;
+            padding: 12px 28px;
             border-radius: 10px;
             text-decoration: none;
             font-size: 16px;
             font-weight: bold;
         }
 
-        .download-section {
-            text-align: left;
-        }
-
-        .download-btn:hover {
+        .primary-btn:hover {
             background-color: var(--primary-dark);
         }
 
-        .small-note {
-            font-size: 13px;
-            color: #6b7785;
-            text-align: left;
-        }
-
-        /* Text links */
-        .feedback-link {
-            color: var(--primary-dark);
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        .feedback-link:hover {
-            text-decoration: underline;
-        }
-
-        /* Secondary button for feedback form */
-        .feedback-btn {
+        .secondary-btn {
             display: inline-block;
             background-color: #ffffff;
             color: var(--primary-dark);
             border: 2px solid var(--primary);
-            padding: 10px 24px;
-            margin-top: 6px;
+            padding: 10px 22px;
             border-radius: 10px;
             text-decoration: none;
             font-size: 15px;
             font-weight: bold;
         }
 
-        .feedback-btn:hover {
+        .secondary-btn:hover {
             background-color: var(--accent);
         }
 
-        /* Bottom block */
-        .browser-test-block {
-            margin-top: 18px;
-            padding: 14px 18px;
-            background: #f2fcf7;
-            border-left: 4px solid var(--primary);
-            border-radius: 8px;
-            font-size: 14px;
-        }
-
-        .browser-test-block a {
-            color: var(--primary-dark);
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        .browser-test-block a:hover {
-            text-decoration: underline;
-        }
-
-        .browser-small-note {
-            font-size: 12px;
-            color: #6b7785;
-            margin-top: 4px;
+        .note-box {
+            margin-top: 14px;
+            padding: 10px 12px;
+            background: #f7fafc;
+            border-radius: 10px;
+            font-size: 13px;
+            color: #56606c;
         }
 
         .footer-note {
-            margin-top: 20px;
+            margin-top: 18px;
             font-size: 12px;
             color: #8a94a3;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 14px;
+            color: var(--primary-dark);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 22px 16px 20px;
+            }
+            h1 {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
@@ -195,72 +161,75 @@
         <div class="app-header">
             <img class="app-icon" src="interpill-logo.png" alt="Interpill logo">
             <div>
-                <h1>Interpill – App for Testing</h1>
-                <p class="subtitle">Please use this page to download the app and submit your feedback.</p>
+                <h1>Interpill – Testing with Online Emulator</h1>
+                <p class="subtitle">
+                    If you do not have an Android phone, you can still try Interpill using a free online emulator.
+                </p>
             </div>
         </div>
 
-        <!-- About Interpill -->
         <div class="section">
-            <div class="section-title">About Interpill</div>
-            <p class="about-main">
-                Interpill provides personalised drug–drug interaction checks.
-                <a class="feedback-link" href="about.html">Learn more →</a>
-            </p>
-            <p class="about-sub">
-                Tap below to download the app for testing.
-            </p>
-        </div>
-
-        <!-- Step 1 – Download -->
-        <div class="section download-section">
-            <div class="section-title">Step&nbsp;1 – Download the app</div>
-            <p>Tap the button below to download the Interpill app to your Android device.</p>
-
-            <a class="download-btn"
-               href="https://github.com/olgaleobel/Interpill-App-Testing/releases/download/v1.0-testing/composeApp-beta-34.apk">
-                Download Interpill App
-            </a>
-
-            <p class="small-note">The file will appear in your <em>Downloads</em> folder.</p>
-        </div>
-
-        <!-- Step 2 – Install -->
-        <div class="section">
-            <div class="section-title">Step&nbsp;2 – Install the app</div>
-            <div class="steps">
-                <div class="step">
-                    <strong>1.</strong> Open the downloaded file on your phone.
-                </div>
-                <div class="step">
-                    <strong>2.</strong> If a security message appears, choose <em>Allow installation</em>.
-                </div>
-                <div class="step">
-                    <strong>3.</strong> Once installed, find <strong>Interpill</strong> in your apps and open it.
-                </div>
-            </div>
-        </div>
-
-        <!-- Step 3 – Try the app -->
-        <div class="section">
-            <div class="section-title">Step&nbsp;3 – Try the app</div>
+            <div class="section-title">Before you start</div>
             <p>
-                Once Interpill is installed, you can explore it freely or follow some suggested
-                testing scenarios prepared for participants.
+                The online emulator runs Interpill inside your browser for up to around 30 minutes of use.
+                The main interaction and information features are available, but
+                <strong>scanning medication packaging is not supported</strong> in this mode.
             </p>
+        </div>
+
+        <!-- Step 1 -->
+        <div class="section">
+            <div class="section-title">Step&nbsp;1 – Open the emulator</div>
+            <p>Click the button below to open Interpill in the online Android emulator.</p>
             <p>
-                <a class="feedback-link" href="scenarios.html">
-                    Open example testing scenarios →
+                <a class="primary-btn"
+                   href="https://appetize.io/app/b_dssjraxcika2uoobbf3x23mshq"
+                   target="_blank">
+                    Open Interpill in online emulator
                 </a>
             </p>
+            <div class="note-box">
+                If the emulator opens in a new tab and you see a loading screen, please wait a few seconds
+                until the virtual device appears.
+            </div>
         </div>
 
-        <!-- Step 4 – Feedback -->
+        <!-- Step 2 -->
+        <div class="section">
+            <div class="section-title">Step&nbsp;2 – Create an account or sign in</div>
+            <p>
+                The emulator website may ask you to sign in or create a free account before starting the session.
+            </p>
+            <ol>
+                <li>Choose <strong>Sign up</strong> or <strong>Log in</strong> on the emulator website.</li>
+                <li>You can usually use a Google account or an email address with a password.</li>
+                <li>After signing in, return to the Interpill emulator page if needed.</li>
+            </ol>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="section">
+            <div class="section-title">Step&nbsp;3 – Use Interpill in the emulator</div>
+            <ol>
+                <li>When the virtual phone appears, wait until Interpill finishes loading.</li>
+                <li>Use the mouse as a finger: click to tap, click–and–drag to swipe.</li>
+                <li>Try searching for medicines, reviewing interaction information and exploring the schedule.</li>
+            </ol>
+            <div class="note-box">
+                Emulator sessions may be time-limited. If the screen resets or stops responding,
+                you can simply refresh the page to start a new session.
+                The scanning feature requires a real camera and is therefore not available in the emulator.
+            </div>
+        </div>
+
+        <!-- Step 4 -->
         <div class="section">
             <div class="section-title">Step&nbsp;4 – Share your feedback</div>
-            <p>Please complete the short feedback form after testing the app:</p>
             <p>
-                <a class="feedback-btn"
+                After you have finished exploring Interpill in the emulator, please complete the main feedback form:
+            </p>
+            <p>
+                <a class="secondary-btn"
                    href="https://docs.google.com/forms/d/1xoBHd9szkrjVSsM5ZfyjFl3ZG8xgNvtlbQddYoi8DSk/preview"
                    target="_blank">
                     Open feedback form
@@ -268,29 +237,13 @@
             </p>
         </div>
 
-        <!-- Alternative – Emulator + contact form -->
-        <div class="browser-test-block">
-            <p>
-                <strong>No Android phone but would like to test the app?</strong>
-                <a href="emulator.html">
-                    Test Interpill in the online emulator →
-                </a>
-            </p>
-            <p class="browser-small-note">
-                You can try Interpill in a free online emulator (without the packaging scan feature).
-            </p>
-            <p class="browser-small-note">
-                Questions about taking part in testing? Please
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd70pgmCUoTK13EouzFaOLE9X7BAcdEoh62tE_TA-fabQdCZg/viewform?usp=header"
-                   target="_blank">
-                    fill in this contact form →
-                </a>
-            </p>
-        </div>
-
         <p class="footer-note">
-            This version of Interpill is for evaluation and study purposes only.
+            This page is intended for study and evaluation purposes.  
+            If you encounter any technical issues with the emulator, you can also describe them in the feedback form.
         </p>
+
+        <!-- BACK LINK ADDED -->
+        <a class="back-link" href="index.html">← Back to main download page</a>
     </div>
 </div>
 
