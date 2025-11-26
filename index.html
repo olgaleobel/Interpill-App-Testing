@@ -1,0 +1,284 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interpill – Download</title>
+    <style>
+        :root {
+            --primary: #1c8b6a;
+            --primary-dark: #13614a;
+            --accent: #eaf8f3;
+            --bg: #f3f6fa;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle at top, #e4f3ff 0, #f3f6fa 40%, #f3f6fa 100%);
+            color: #333;
+        }
+
+        .wrapper {
+            max-width: 720px;
+            margin: 40px auto;
+            padding: 0 16px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 28px 22px 26px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+        }
+
+        .app-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 8px;
+        }
+
+        .app-icon {
+            width: 72px;
+            height: 72px;
+            border-radius: 16px;
+            display: block;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin: 0 0 2px;
+            color: #1f2933;
+        }
+
+        .subtitle {
+            margin: 0;
+            font-size: 14px;
+            color: #6b7785;
+        }
+
+        .section {
+            margin-top: 22px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 6px;
+            color: #243441;
+        }
+
+        p {
+            font-size: 15px;
+            margin: 4px 0 10px;
+        }
+
+        .about-main {
+            margin-bottom: 6px;
+        }
+
+        .about-sub {
+            margin-top: 14px;
+        }
+
+        .steps {
+            background: #f7fafc;
+            border-radius: 12px;
+            padding: 10px 12px;
+            margin-top: 6px;
+        }
+
+        .step {
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        .step strong {
+            color: #1f2933;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 14px 32px;
+            margin: 14px 0 4px 0;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .download-section {
+            text-align: left;
+        }
+
+        .download-btn:hover {
+            background-color: var(--primary-dark);
+        }
+
+        .small-note {
+            font-size: 13px;
+            color: #6b7785;
+            text-align: left;
+        }
+
+        .feedback-link {
+            color: var(--primary-dark);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .feedback-link:hover {
+            text-decoration: underline;
+        }
+
+        .feedback-btn {
+            display: inline-block;
+            background-color: #ffffff;
+            color: var(--primary-dark);
+            border: 2px solid var(--primary);
+            padding: 10px 24px;
+            margin-top: 6px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .feedback-btn:hover {
+            background-color: var(--accent);
+        }
+
+        .browser-test-block {
+            margin-top: 18px;
+            padding: 14px 18px;
+            background: #f2fcf7;
+            border-left: 4px solid var(--primary);
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .browser-test-block a {
+            color: var(--primary-dark);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .browser-test-block a:hover {
+            text-decoration: underline;
+        }
+
+        .browser-small-note {
+            font-size: 12px;
+            color: #6b7785;
+            margin-top: 4px;
+        }
+
+        .footer-note {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #8a94a3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="card">
+        <div class="app-header">
+            <img class="app-icon" src="interpill-logo.png" alt="Interpill logo">
+            <div>
+                <h1>Interpill. Testing and Feedback</h1>
+                <p class="subtitle">Interpill app provides personalised drug–drug interaction checks.</p>
+            </div>
+        </div>
+
+        <!-- About Interpill -->
+        <div class="section">
+            <div class="section-title">About Interpill</div>
+            <p class="about-main">
+                Interpill provides personalised drug–drug interaction checks.
+                <a class="feedback-link" href="about.html">Learn more →</a>
+            </p>
+            <p class="about-sub">
+                Tap below to download the app for testing.
+            </p>
+        </div>
+
+        <!-- Step 1 – Download & Install -->
+        <div class="section download-section">
+            <div class="section-title">Step&nbsp;1 – Download and Install</div>
+            <p>Tap the button below to download the Interpill app to your Android device and install it.</p>
+
+            <a class="download-btn"
+               href="https://github.com/olgaleobel/Interpill-App-Testing/releases/download/v1.0-testing/composeApp-beta-34.apk">
+                Download Interpill App
+            </a>
+
+            <p class="small-note">The file will appear in your <em>Downloads</em> folder.</p>
+        </div>
+
+        <!-- Step 2 – Try the app -->
+        <div class="section">
+            <div class="section-title">Step&nbsp;2 – Try the app</div>
+            <p>Explore it freely or follow some suggested testing scenarios:</p>
+
+            <p><strong>Scenario 1 – Checking two medicines together</strong><br>
+                Find two medicines in the app (for example <em>Caffeine</em> and <em>Ibuprofen</em>).<br>
+                Run an interaction check for them.<br>
+                Read the result and any highlighted warnings.<br>
+                Decide whether the explanation feels clear.
+            </p>
+
+            <p><strong>Scenario 2 – Allergy-related risk</strong><br>
+                Imagine a person with an allergy to fish or fish oil (для этого сначала добавьте аллергию в профиль).<br>
+                Find a product containing Omega-3 acids and check its information.<br>
+                See whether the app highlights anything relevant to the allergy.
+            </p>
+
+            <p>
+                <a class="feedback-link" href="scenarios.html?from=index">
+                    Хотите больше сценариев? (опционально) →
+                </a>
+            </p>
+        </div>
+
+        <!-- Step 3 – Feedback -->
+        <div class="section">
+            <div class="section-title">Step&nbsp;3 – Share your feedback</div>
+            <p>Please complete the short анонимный feedback form after testing the app:</p>
+            <p>
+                <a class="feedback-btn"
+                   href="https://docs.google.com/forms/d/e/1FAIpQLSd4bOJ8UAJFvxX7qVsekwYtWjqegmghjgq8BsQdEX31ZSZPNQ/viewform?usp=publish-editor"
+                   target="_blank">
+                    Open feedback form
+                </a>
+            </p>
+        </div>
+
+        <!-- Bottom block -->
+        <div class="browser-test-block">
+            <p>
+                <strong>No Android phone but would like to test the app?</strong>
+            </p>
+
+            <p class="browser-small-note">
+                Questions about taking part in testing? Другие вопросы/запросы?  
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd70pgmCUoTK13EouzFaOLE9X7BAcdEoh62tE_TA-fabQdCZg/viewform?usp=header"
+                   target="_blank">
+                    Fill in this contact form →
+                </a>
+            </p>
+        </div>
+
+        <p class="footer-note">
+            This version of Interpill is for evaluation and study purposes only.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
